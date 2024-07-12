@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(250, 250, 250);
+}
+
+
+.header-navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.header-navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.header-navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.header-navigation .popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.header-navigation .popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+/* Light theme */
+:root {
+    --background-color: #000000;
+    --text-color: #b2e6f0;
+    --link-color: #1a73e8;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --link-color: #8ab4f8;
+}
+
+.coll {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.header-logo {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #8ab4f8;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.theme-toggle-button {
+   
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    background-color: var(--link-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 0.30rem;
+   
+}
+
+body {
+    padding: 130px;
+    display: flex;
+    flex-flow: wrap;
+    font-family: "Ubuntu", sans-serif;
+  }
+  body * {
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+
+.card{
+
+    background-color: #ffc881;
+}
+  
+  .card-container {
+    flex: 20px;
+    margin: 40px;
+    width: 1020px;
+}
+.card-container .card {
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+  }
+  .card-container .card a {
+    padding: 50px;
+    width: 100%;
+    height: 650px;
+    border: 2px solid black;
+    background: rgb(236, 198, 198);
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.90s ease;
+  }
+  .card-container .card a:hover {
+    transform: translate(-30px, -30px);
+    border: #000000 dashed;
+  }
+  .card-container .card a:hover .card--display {
+    display: none;
+  }
+  .card-container .card a:hover .card--hover {
+      display: block;
+  }
+  .card-container .card a .card--display i {
+    font-size: 30px;
+    margin-top: 200px;
+  }
+  .card-container .card a .card--display h2 {
+    margin: 20px 0 0;
+  }
+  .card-container .card a .card--hover {
+    display: none;
+  }
+  .card-container .card a .card--hover h2 {
+    margin: 20px 0;
+  }
+  .card-container .card a .card--hover p {
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  .card-container .card a .card--hover p.link {
+    margin: 20px 0 0;
+    font-weight: bold;
+    /* color: #5bc0eb; */
+}
+.card-container .card .card--border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 2px dashed black;
+    z-index: -1;
+  }
+  .card-container .card.card--dark a {
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+  .card-container .card.card--dark a .card--hover .link {
+    color: #fde74c;
+  }
+
+  .video-background{
+    width: 70px;
+  }
+
+  .card--display{
+    background-size: cover;
+    /* background-color: #1a73e8; */
+    border-radius: 5px;
+  }
+
+
+  .consultation-button {
+    background-color: #000; /* Dark black color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .consultation-button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+  }
+  
+  /* Add any additional styles needed for your other components */
+  

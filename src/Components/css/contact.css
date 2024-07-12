@@ -1,0 +1,168 @@
+/* General styles for contact form */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    /* background: #333; */
+}
+
+body{
+    background-color: #8ec0f3;
+}
+  .contact-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+  
+  .contact-header-logo {
+    font-size: 2em;
+    color: #fdfeff;
+    user-select: none;
+  }
+  
+  .contact-header-navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+  }
+  
+  .contact-header-navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+  }
+  
+  .contact-header-navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  .contact-header-navigation .contact-theme-toggle-button {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+  }
+  
+  .contact-header-navigation .contact-theme-toggle-button:hover {
+    background: #fff;
+    color: #162938;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    background: #624ec6;
+    margin-top: 100px; /* Adjust as needed */
+  }
+  
+  .contact-form-section form {
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    padding: 25px 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    margin: 25px;
+  }
+  
+  .contact-form-section form h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .contact-input-box {
+    margin-top: 20px;
+  }
+  
+  .contact-input-box .contact-field {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ddd;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contact-input-box .contact-field.contact-message {
+    height: 40px;
+    resize: none;
+  }
+  
+  .contact-form-section button {
+    width: 100%;
+    height: 55px;
+    background: #826afb;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: 500;
+    transition: .5s;
+  }
+  
+  .contact-form-section button:hover {
+    background: #624ec6;
+  }
+  
+  .contact-input-box select.contact-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .contact-input-box select.contact-field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .contact-submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .contact-submit-button:hover {
+    background-color: #0056b3;
+  }
+  
